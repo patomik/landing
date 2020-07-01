@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "shop-universal"
+  },
+  "targets": {
+    "store-7a3d1": {
+      "hosting": {
+        "shop-universal": [
+          "store-7a3d1"
+        ]
+      }
+    }
+  }
+}

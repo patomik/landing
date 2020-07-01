@@ -1,5 +1,10 @@
 # ShopUniversal
 
+## ng add @angular/fire from https://github.com/angular/angularfire/blob/master/docs/deploy/getting-started.md
+## or ng add @angular/fire --project=[PROJECT_NAME]   # - better
+## ng deploy --project=[PROJECT_NAME]
+## ng deploy --preview   # - better
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
 ## Development server
