@@ -1,0 +1,40 @@
+<section class="section section_services">
+  <div class="wrapper">
+    <div class="inner">
+      <h2>О сервисе</h2>
+      <div class="text-block">
+        <p>
+          Это уникальный сервис для получения микрозайма онлайн.
+          Оставьте заявку на получение денег: работаем со всеми
+          клиентами — не важно, какая у вас кредитная история и имеются
+          ли текущие просрочки.
+        </p>
+        <p>
+          На основе заполненной формы сервис в автоматическом режиме
+          подготовит самые лучшие и выгодные кредитные предложения
+          специально для Вас.
+        </p>
+      </div>
+      <ul class="services__list">
+        <li>
+          <div class="services-count js-numbers" data-count="986">
+            <app-number-tracker [end]="loanNumber" [countInterval]="timeIterator * 10" [iteratorValue]="3"></app-number-tracker>
+          </div>
+          <div class="services-text">ЗАЙМОВ В ДЕНЬ</div>
+        </li>
+        <li>
+          <div class="services-count js-numbers" data-count="79389">
+             <app-number-tracker [end]="proveLoan" [countInterval]="timeIterator" [iteratorValue]="12"></app-number-tracker>
+          </div>
+          <div class="services-text">ОДОБРЕННЫХ ЗАЙМОВ</div>
+        </li>
+        <li>
+          <div class="services-count js-numbers" data-count="500">
+            <app-number-tracker [end]="approveLoan" [countInterval]="timeIterator * 20" [iteratorValue]="2"></app-number-tracker>
+          </div>
+          <div class="services-text">МЛН. ГРН. ВЫДАНО</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+<header class="js-fixed-block" [ngClass]="{'sticky' : isSticky}" [ngStyle]="isSticky?{'background': activeColor}:{'background': defaultColor}" >
+  <div class="wrapper">
+    <div class="header-wrap header-wrap_mod">
+      <div class="logo">
+        <a>
+          <img *ngIf="isDefaultLogo"
+            src="./../../../assets/img/images/logo.svg"
+            alt="logo"
+            class="logo"
+          />
+          <img *ngIf="!isDefaultLogo"
+            src="./../../../assets/img/images/logo_light.svg"
+            alt="logo"
+            class="logo"
+          />
+        </a>
+        <div [ngStyle]="{'color': textColor}">Деньги здесь и сейчас</div>
+      </div>
+      <div class="header-right">
+        <a routerLink="/" routerLinkActive="active" class="header-question js-save-sum-button"
+        [ngStyle]="{'color': textColor}" >Нужен займ?</a
+        >
+        <div class="header-lang">
+          <a class="lang-link js-lang"><span>RU</span></a>
+        </div>
+        <a href="tel:0442281431" class="header-phone" [ngStyle]="{'color': textColor}"
+          >(044)&nbsp;<span [ngStyle]="isSticky?{'color': brandColor}:{'color': defaultColor}">228-14-31</span></a
+        >
+      </div>
+    </div>
+  </div>
+</header>

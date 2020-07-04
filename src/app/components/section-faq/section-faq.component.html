@@ -1,0 +1,46 @@
+<section class="section section_faq">
+  <div class="wrapper">
+    <h2>
+      Вопросы и <br />
+      <span>ответы на них</span>
+    </h2>
+    <div class="accordeon" *ngFor="let info of faqInfo">
+
+      <div class="accordeon-cont" (click)="info.flag = !info.flag" [ngClass]="{'active' : info.flag}">
+        <a class="accordeon-link" [ngClass]="{'active' : !info.flag}"
+          >{{info.question}}<span class="accordeon-drop" ></span
+        ></a>
+        <div class="accordeon-hide" *ngIf="info.flag" [@panelInOut]>
+          {{info.answer}}
+        </div>
+      </div>
+      <!-- <div class="accordeon-cont">
+        <a href="#" class="accordeon-link"
+          >КАК ПОЛУЧИТЬ ДЕНЬГИ?<span class="accordeon-drop"></span
+        ></a>
+        <div class="accordeon-hide" style="display: none;">
+          Займ Вы можете получить на карту, наличными, на банковский
+          счет.
+        </div>
+      </div>
+      <div class="accordeon-cont">
+        <a href="#" class="accordeon-link"
+          >КАК ПОГАСИТЬ ЗАЙМ?<span class="accordeon-drop"></span
+        ></a>
+        <div class="accordeon-hide" style="display: none;">
+          Вы можете погасить займ наличными деньгами, платежом с
+          банковской карты, банковским переводом.
+        </div>
+      </div>
+      <div class="accordeon-cont">
+        <a href="#" class="accordeon-link"
+          >КАК ЭТО РАБОТАЕТ?<span class="accordeon-drop"></span
+        ></a>
+        <div class="accordeon-hide" style="display: none;">
+          Заполните анкету, получите одобрение, заберите деньги
+          выбранным способом.
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>

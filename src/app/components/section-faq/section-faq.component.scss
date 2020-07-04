@@ -1,0 +1,141 @@
+@import "./../../shared/variables";
+
+.accordeon-link {
+  position      : relative;
+  display       : block;
+  padding-right : 60px;
+  font-size     : 29px;
+  line-height   : 36px;
+  font-weight   : 700;
+  color         : $brand-black;
+  text-transform: uppercase
+}
+.accordeon-cont {
+  margin-bottom: 45px;
+  background-color: $brand-white;
+}
+
+.accordeon-cont {
+  margin-bottom   : 45px;
+  background-color: $brand-white
+}
+
+.accordeon-cont:last-child {
+  margin-bottom: 0
+}
+
+.accordeon-cont.active .accordeon-drop:after {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  -ms-transform    : translate(-50%, -50%) rotate(0deg);
+  transform        : translate(-50%, -50%) rotate(0deg)
+}
+
+.accordeon-hide {
+  max-width     : 720px;
+  margin-top    : 20px;
+  color         : #9aa3ac;
+  letter-spacing: .2px;
+  font-size     : 14px;
+  line-height   : 28px;
+  font-weight   : 700
+}
+
+.accordeon-hide a {
+  color: #66b41f
+}
+
+.accordeon-hide a:hover {
+  text-decoration: underline
+}
+
+.accordeon-drop {
+  position         : absolute;
+  top              : 50%;
+  right            : 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform    : translateY(-50%);
+  transform        : translateY(-50%);
+  width            : 50px;
+  height           : 50px
+}
+
+.accordeon-drop:before,
+.accordeon-drop:after {
+  content           : '';
+  position          : absolute;
+  left              : 50%;
+  top               : 50%;
+  width             : 20px;
+  height            : 2px;
+  -webkit-transform : translate(-50%, -50%);
+  -ms-transform     : translate(-50%, -50%);
+  transform         : translate(-50%, -50%);
+  background-color  : $brand-middle1;
+  -webkit-transition: all .3s ease-out;
+  -o-transition     : all .3s ease-out;
+  transition        : all .3s ease-out
+}
+
+.accordeon-drop:after {
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform    : translate(-50%, -50%) rotate(90deg);
+  transform        : translate(-50%, -50%) rotate(90deg)
+}
+
+@media screen and (max-width:767px) {
+  .accordeon-link {
+    font-size  : 16px;
+    line-height: 22px
+  }
+
+  .accordeon-cont {
+    margin-bottom: 20px
+  }
+}
+
+.hide-answer {
+  transition: all .3s;
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .section {
+    padding: 55px 0
+  }
+
+  h1 {
+    font-size  : 43px;
+    line-height: 48px
+  }
+
+  h2 {
+    font-size  : 32px;
+    line-height: 34px
+  }
+
+  h3 {
+    font-size  : 18px;
+    line-height: 24px
+  }
+
+  .wrapper {
+    padding: 0 30px
+  }
+  
+  .accordeon-link {
+    font-size  : 16px;
+    line-height: 22px
+  }
+
+  .accordeon-cont {
+    margin-bottom: 20px
+  }
+
+  .section_faq {
+    min-height: 1px
+  }
+
+  .section_faq h2 {
+    margin-bottom: 30px
+  }
+}

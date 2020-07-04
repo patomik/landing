@@ -1,0 +1,323 @@
+@import "./../../shared/variables";
+
+.section_review {
+  padding         : 130px 0 50px;
+  background-color: $middle-white
+}
+
+.section_review .wrapper {
+  max-width: 1360px
+}
+
+.section_review h2 {
+  margin-bottom : 75px;
+  text-transform: uppercase;
+  text-align    : center
+}
+.review-sliders__quote {
+  max-width  : 790px;
+  margin     : 0 auto;
+  font-size  : 24px;
+  font-weight: 700;
+  line-height: 40px;
+  color      : #fff
+}
+
+.review-sliders__quote .slick-slide {
+  outline: none
+}
+
+.review-sliders__quote blockquote {
+  padding: 0 35px
+}
+
+.review-sliders__quote blockquote span {
+  position: relative
+}
+
+.review-sliders__quote blockquote span:after,
+.review-sliders__quote blockquote span:before {
+  content    : 'вЂњ';
+  position   : absolute;
+  color      : rgba(255, 255, 255, .5);
+  font-size  : 32px;
+  font-weight: 700;
+  line-height: 36px
+}
+
+.review-sliders__quote blockquote span:before {
+  right: calc(100% + 20px)
+}
+
+.review-sliders__quote blockquote span:after {
+  bottom: -20px;
+  left  : calc(100% + 20px)
+}
+
+.review-sliders__author {
+  margin: 0 -20px
+}
+
+.review-sliders__author .slick-dots {
+  position               : absolute;
+  top                    : 73%;
+  width                  : 100%;
+  display                : -webkit-box;
+  display                : -webkit-flex;
+  display                : -ms-flexbox;
+  display                : flex;
+  -webkit-box-pack       : center;
+  -webkit-justify-content: center;
+  -ms-flex-pack          : center;
+  justify-content        : center
+}
+
+.review-sliders__author .slick-dots li {
+  cursor: pointer;
+  margin: 0 5px
+}
+
+.review-sliders__author .slick-dots li.slick-active .dot {
+  background: #fff
+}
+
+.review-sliders__author .slick-dots li .dot {
+  display           : block;
+  background        : 0 0;
+  width             : 8px;
+  height            : 8px;
+  border            : 1px solid #fff;
+  border-radius     : 50%;
+  -webkit-transition: all .3s ease-out;
+  -o-transition     : all .3s ease-out;
+  transition        : all .3s ease-out
+}
+
+.review-sliders__author .slick-slide {
+  padding: 90px 0 160px;
+  margin : 0 20px;
+  outline: none
+}
+
+.review-sliders__author .slick-slide.slick-center .author-block {
+  background        : #fff;
+  -webkit-box-shadow: 0 49px 110px rgba(60, 83, 46, .441925);
+  box-shadow        : 0 49px 110px rgba(60, 83, 46, .441925)
+}
+
+.author-block {
+  display            : -webkit-box;
+  display            : -webkit-flex;
+  display            : -ms-flexbox;
+  display            : flex;
+  -webkit-box-align  : center;
+  -webkit-align-items: center;
+  -ms-flex-align     : center;
+  align-items        : center;
+  padding            : 30px 55px 30px 60px;
+  border-radius      : 10px;
+  background-color   : #9dcd58;
+  -webkit-transition : all .3s ease-out;
+  -o-transition      : all .3s ease-out;
+  transition         : all .3s ease-out
+}
+.slick-slider {
+  position                   : relative;
+  display                    : block;
+  -webkit-box-sizing         : border-box;
+  box-sizing                 : border-box;
+  -webkit-touch-callout      : none;
+  -webkit-user-select        : none;
+  -moz-user-select           : none;
+  -ms-user-select            : none;
+  user-select                : none;
+  -ms-touch-action           : pan-y;
+  touch-action               : pan-y;
+  -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display : block;
+  margin  : 0;
+  padding : 0
+}
+
+.slick-list:focus {
+  outline: none
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform    : translate3d(0, 0, 0);
+  transform        : translate3d(0, 0, 0)
+}
+
+.slick-track {
+  position: relative;
+  left    : 0;
+  top     : 0;
+  display : block
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table
+}
+
+.slick-track:after {
+  clear: both
+}
+
+.slick-loading .slick-track {
+  visibility: hidden
+}
+
+.slick-slide {
+  float     : left;
+  height    : 100%;
+  min-height: 1px;
+  display   : none
+}
+
+[dir=rtl] .slick-slide {
+  float: right
+}
+
+.slick-slide img {
+  display: block
+}
+
+.slick-slide.slick-loading img {
+  display: none
+}
+
+.slick-slide.dragging img {
+  pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+  display: block
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height : auto;
+  border : 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+  display: none
+}
+.slick-slider {
+  position                   : relative;
+  display                    : block;
+  -webkit-box-sizing         : border-box;
+  box-sizing                 : border-box;
+  -webkit-touch-callout      : none;
+  -webkit-user-select        : none;
+  -moz-user-select           : none;
+  -ms-user-select            : none;
+  user-select                : none;
+  -ms-touch-action           : pan-y;
+  touch-action               : pan-y;
+  -webkit-tap-highlight-color: transparent
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display : block;
+  margin  : 0;
+  padding : 0
+}
+
+.slick-list:focus {
+  outline: none
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform    : translate3d(0, 0, 0);
+  transform        : translate3d(0, 0, 0)
+}
+
+.slick-track {
+  position: relative;
+  left    : 0;
+  top     : 0;
+  display : block
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table
+}
+
+.slick-track:after {
+  clear: both
+}
+
+.slick-loading .slick-track {
+  visibility: hidden
+}
+
+.slick-slide {
+  float     : left;
+  height    : 100%;
+  min-height: 1px;
+  display   : none
+}
+
+[dir=rtl] .slick-slide {
+  float: right
+}
+
+.slick-slide img {
+  display: block
+}
+
+.slick-slide.slick-loading img {
+  display: none
+}
+
+.slick-slide.dragging img {
+  pointer-events: none
+}
+
+.slick-initialized .slick-slide {
+  display: block
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height : auto;
+  border : 1px solid transparent
+}
+
+.slick-arrow.slick-hidden {
+  display: none
+}

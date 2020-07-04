@@ -1,0 +1,74 @@
+
+<app-header  [activeColor]="activeColor" [defaultColor]="defaultColor" [isDefaultLogo]="false" [textColor]="textColor"></app-header>
+<div class="web">
+  <!-- <div class="icon-load">
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+    <div class="loader-text">Анализируем данные</div>
+  </div> -->
+  <div class="main-wrapper">
+    <!-- <header class="js-fixed-block inner-2">
+      <div class="wrapper">
+        <div class="header-wrap header-wrap_mod">
+          <div class="logo">
+            <a>
+              <img src="https://babules.com.ua/img/logo_light.svg" alt="logo" class="logo">
+            </a>
+            <div>Деньги здесь и сейчас</div>
+          </div>
+          <div class="header-right">
+            <a routerLink="/" routerLinkActive="active" class="header-question js-save-sum-button">Нужен займ?</a>
+            <div class="header-lang">
+              <a class="lang-link  js-lang"><span>RU</span></a>
+              <div class="lang-content">
+                <a href="sms-unsubscribe?lang=uk" class="js-inner">UA</a>
+              </div>
+            </div>
+            <a href="tel:0442281431" class="header-phone ">(044)&nbsp;<span>228-14-31</span></a>
+          </div>
+        </div>
+      </div>
+    </header> -->
+    <main class="content content_profile">
+      <div class="wrapper">
+        <div class="content-wrap">
+          <div class="profile-cont">
+            <div class="step-row step-row_top step-row_top-mod">
+              <h3>Отписаться от SMS рассылки Бабулес</h3>
+            </div>
+            <div class="step-cont">
+              <div class="step-info step-info_mod" style="margin-bottom: 25px;">
+                <span>Чтобы отменить SMS рассылку Бабулес, введите телефон, указанный при
+                  регистрации</span>
+              </div>
+            </div>
+            <div class="box-form">
+              <div class="box-form-row box-form-row_2 box-form-row_mb">
+                <div class="box-field sign-off">
+                  <label for="phoneNumber" class="box-field__label">Ваш телефон
+                    <sup>*</sup></label>
+                  <div class="box-field__input">
+                    <input type="tel" class="form-control js-focus" data-mask="+38 000-00-00-000" placeholder="+38"
+                      value="+38" id="phoneNumber" name="phone" data-length="17" autocomplete="off" maxlength="17">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step-row step-row_bottom step-row_bottom-mod">
+              <a routerLink="/" routerLinkActive="active" class="step-back">Назад</a>
+              <a class="btn end-form" id="unsubscribeButton" data-action="POST"
+                data-url="https://babules.com.ua/sms-unsubscribe">Отменить рассылку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+<app-footer></app-footer>
+

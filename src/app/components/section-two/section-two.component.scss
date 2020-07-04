@@ -1,0 +1,124 @@
+@import "./../../shared/variables";
+
+.monney__list {
+  position               : relative;
+  display                : -webkit-box;
+  display                : -webkit-flex;
+  display                : -ms-flexbox;
+  display                : flex;
+  -webkit-box-align      : start;
+  -webkit-align-items    : flex-start;
+  -ms-flex-align         : start;
+  align-items            : flex-start;
+  -webkit-box-pack       : justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack          : justify;
+  justify-content        : space-between
+}
+
+.monney__list.active:after {
+  opacity           : 1;
+  width             : 80%;
+  -webkit-transition: width 1.5s linear, opacity .25s linear;
+  -o-transition     : width 1.5s linear, opacity .25s linear;
+  transition        : width 1.5s linear, opacity .25s linear
+}
+
+.monney__list.active .monney__item {
+  opacity           : 1;
+  -webkit-transition: opacity .25s linear;
+  -o-transition     : opacity .25s linear;
+  transition        : opacity .25s linear
+}
+
+.monney__list.active .monney__item:nth-child(2) {
+  -webkit-transition-delay: .4s;
+  -o-transition-delay     : .4s;
+  transition-delay        : .4s
+}
+
+.monney__list.active .monney__item:nth-child(3) {
+  -webkit-transition-delay: .85s;
+  -o-transition-delay     : .85s;
+  transition-delay        : .85s
+}
+
+.monney__list.active .monney__item:nth-child(4) {
+  -webkit-transition-delay: 1.3s;
+  -o-transition-delay     : 1.3s;
+  transition-delay        : 1.3s
+}
+
+.monney__list:after {
+  content      : '';
+  position     : absolute;
+  width        : 0%;
+  height       : 1px;
+  opacity      : 0;
+  border-bottom: 1px dashed #77b41f;
+  left         : 10%;
+  top          : 154px
+}
+
+.monney__item {
+  position  : relative;
+  z-index   : 1;
+  width     : calc(25% - 40px);
+  text-align: center;
+  opacity   : 0
+}
+
+.monney-ico {
+  height                 : 80px;
+  margin-bottom          : 54px;
+  display                : -webkit-box;
+  display                : -webkit-flex;
+  display                : -ms-flexbox;
+  display                : flex;
+  -webkit-box-align      : end;
+  -webkit-align-items    : flex-end;
+  -ms-flex-align         : end;
+  align-items            : flex-end;
+  -webkit-box-pack       : center;
+  -webkit-justify-content: center;
+  -ms-flex-pack          : center;
+  justify-content        : center;
+  font-size              : 80px
+}
+
+.monney-count {
+  margin                 : 0 auto 38px;
+  width                  : 40px;
+  height                 : 40px;
+  display                : -webkit-box;
+  display                : -webkit-flex;
+  display                : -ms-flexbox;
+  display                : flex;
+  -webkit-box-align      : center;
+  -webkit-align-items    : center;
+  -ms-flex-align         : center;
+  align-items            : center;
+  -webkit-box-pack       : center;
+  -webkit-justify-content: center;
+  -ms-flex-pack          : center;
+  justify-content        : center;
+  background-color       : #66b41f;
+  border-radius          : 50%;
+  font-weight            : 500;
+  font-size              : 20px;
+  line-height            : 30px;
+  text-align             : center;
+  color                  : #fff
+}
+
+.section_2 h2 {
+  margin-bottom: 86px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section_2 h2 span {
+  color: $brand-middle;
+}
+.section_2 h3 span {
+  color: $brand-middle;
+}
