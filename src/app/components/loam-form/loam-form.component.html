@@ -1,4 +1,3 @@
-
 <div class="calc-wrap">
   <div class="head-calc__title">
     Заполни заявку сейчас<br />
@@ -8,11 +7,8 @@
     <div class="head-calc__top">
       <div class="head-calc__summ">
         <div class="calc-text calc-text_zaym">Сумма займа</div>
-        <div
-          class="calc-count calc-count_zaym"
-          id="js-output-slider1"
-        >
-          &nbsp;{{currentLoan}} ₴
+        <div class="calc-count calc-count_zaym" id="js-output-slider1">
+          &nbsp;{{currentLoan |currency:'&#8381;':'symbol':'3.0'}}
         </div>
       </div>
       <div class="head-calc__summ">
@@ -20,61 +16,17 @@
           Сумма возврата
         </div>
         <div class="calc-count calc-count_output calc_ret_sum">
-          &nbsp;{{finishLoan}} ₴
+          &nbsp;{{finishLoan |currency:'&#8381;':'symbol':'3.0'}}
         </div>
       </div>
     </div>
-    <!-- <div class="head-calc__middle"> -->
+    <app-slider [sliderMRangeSel]="newRange" class="head-calc__slider noUi-target noUi-horizontal noUi-rtl">
+    </app-slider>
 
-      <!-- <div
-
-        id="js-range-slider1"
-      > -->
-      <app-slider (slideData)="getCurrentLoan($event)" [sliderMRangeSel]="newRange" class="head-calc__slider noUi-target noUi-horizontal noUi-rtl"></app-slider>
-        <!-- <div class="noUi-base">
-          <div class="noUi-connects">
-            <div
-              class="noUi-connect"
-              style="
-                transform: translate(0%, 0px) scale(0.128205, 1);
-              "
-            ></div>
-          </div>
-          <div
-            class="noUi-origin"
-            style="
-              transform: translate(-871.795%, 0px);
-              z-index: 4;
-            "
-          >
-            <div
-              class="noUi-handle noUi-handle-lower"
-              data-handle="0"
-              tabindex="0"
-              role="slider"
-              aria-orientation="horizontal"
-              aria-valuemin="500.0"
-              aria-valuemax="20000.0"
-              aria-valuenow="3000.0"
-              aria-valuetext="3000.00"
-            >
-              <div class="noUi-touch-area"></div>
-            </div>
-          </div>
-        </div> -->
-      <!-- </div> -->
-
-    <!-- </div> -->
     <div class="head-calc__bottom">
-      <div class="head-calc__step">500 ₴</div>
-      <div class="head-calc__step">20 000 ₴</div>
+      <div class="head-calc__step">500 &#8381;</div>
+      <div class="head-calc__step">20 000 &#8381;</div>
     </div>
   </div>
-  <a
-    href="pages/form.html"
-    class="head-calc__btn js-save-sum-button"
-    data-action="POST"
-    data-url="pages/form.html"
-    >Получить деньги</a
-  >
+  <a class="head-calc__btn js-save-sum-button" routerLink="/form" routerLinkActive="active">Получить деньги</a>
 </div>

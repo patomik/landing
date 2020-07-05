@@ -1,0 +1,76 @@
+<div class="step" data-step="5"  >
+  <div class="step-row step-row_top step-row_top-mod">
+      <h3><span>ОЙ!</span> Нам нужны ваши банковские реквизиты!</h3>
+  </div>
+  <div class="step-cont">
+      <div class="step-info step-info_mod step-info_fz">
+          Мы спишем с Вашей карты 1 гривну для ее проверки. Это не обязывает Вас брать
+          займ.
+      </div>
+      <div class="step-card" id="card-step">
+          <div class="card-front">
+              <div class="card-front__top">
+                  <div class="card-ico"><span class="icon-visa"></span></div>
+                  <div class="card-ico"><span class="icon-mastercard"><span
+                              class="path1"></span><span class="path2"></span><span
+                              class="path3"></span></span>
+                  </div>
+              </div>
+              <div class="card-front__middle">
+                  <div class="card-number-name">Номер карты</div>
+                  <div class="card-number">
+                      <input type="tel" id="bank-card-number"
+                          class="card-input js-focus2 ym-disable-keys"
+                          data-length="25" name="card-number"
+                          placeholder="0000   0000   0000   0000"
+                          data-mask="0000   0000   0000   0000">
+                  </div>
+              </div>
+              <div class="card-front__bottom">
+                  <div class="card-ico"><span class="icon-chip"></span></div>
+                  <div class="card-month-year">
+                      <span>ММ / ГГ</span>
+                      <input type="tel" class="card-input js-focus3 ym-disable-keys"
+                          placeholder="00/00" id="bank-card-expire-date"
+                          name="expire-date" data-mask="00/00" data-length="5">
+                  </div>
+                  <div class="card-cvc">
+                      <div class="card-cvc-name">CVC2</div>
+                      <div class="card-cvc-block">
+                          <input type="tel" id="small-cvv"
+                              class="card-input card-input_cvc ym-disable-keys"
+                              placeholder="***" name="cvv" data-mask="000"
+                              data-length="3">
+                          <span>с обратной стороны карты</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card-back">
+              <div class="card-decor"></div>
+              <div class="card-cvc-back">
+                  <div class="card-cvc-name">
+                      <span>CVC2</span>
+                      <div class="card-hint">
+                          <span class="icon-arrow"></span>
+                          <span>с обратной стороны карты</span>
+                      </div>
+                  </div>
+                  <input type="tel" class="card-input card-input_cvc ym-disable-keys"
+                      id="big-cvv" name="cvv" placeholder="***" data-mask="000"
+                      data-length="3">
+              </div>
+          </div>
+          <div class="hidden" id="bank-card-cvv"></div>
+      </div>
+  </div>
+  <div class="step-row step-row_bottom step-row_bottom-mod step-row_bottom-mod2">
+      <a class="step-back js-step-btn" (click)="switchNextForm(4)">Назад</a>
+      <div>
+          <a href="#win_1" id="no-card-btn" class="btn btn_white js-fancybox"
+              style="display: none">У меня нет карты</a>
+          <a routerLink="/offers" routerLinkActive="active" class="btn end-form">
+              Получить деньги </a>
+      </div>
+  </div>
+</div>

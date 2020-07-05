@@ -22,16 +22,7 @@ export class LoamFormComponent implements OnInit {
     this.loanDataService.currentRange.subscribe((range) => {
       this.newRange = range;
       this.currentLoan = this.newRange[1];
-      console.log('this.currentLoan :>> ', this.currentLoan);
       this.finishLoan = Math.floor(this.currentLoan * 1.001);
     });
-    // thi
-  }
-
-  getCurrentLoan($event) {
-    this.newRange = $event;
-    this.currentLoan = this.newRange[1];
-    console.log('this.currentLoan :>> ', this.currentLoan);
-    this.finishLoan = Math.floor(this.currentLoan * 1.001);
   }
 }

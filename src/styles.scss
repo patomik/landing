@@ -220,21 +220,21 @@ button {
 
 @font-face {
   font-family: rubik;
-  src        : url('/assets/fonts/Rubik-Regular.woff') format("embedded-opentype"), url('/assets/fonts/Rubik/Rubik-Regular.woff') format("woff"), url('/assets/fonts/Rubik/Rubik-Regular.ttf') format("truetype");
+  src        : url('/assets/fonts/Rubik-Regular.woff') format("embedded-opentype"), url('/assets/fonts/Rubik-Regular.woff') format("woff"), url('/assets/fonts/Rubik-Regular.ttf') format("truetype");
   font-style : swap;
   font-weight: 400
 }
 
 @font-face {
   font-family: rubik;
-  src        : url(/assets/fonts/Rubik/Rubik-Medium.eot) format("embedded-opentype"), url(/assets/fonts/Rubik/Rubik-Medium.woff) format("woff"), url(/assets/fonts/Rubik/Rubik-Medium.ttf) format("truetype");
+  src        : url(/assets/fonts/Rubik-Medium.eot) format("embedded-opentype"), url(/assets/fonts/Rubik-Medium.woff) format("woff"), url(/assets/fonts/Rubik-Medium.ttf) format("truetype");
   font-style : swap;
   font-weight: 500
 }
 
 @font-face {
   font-family: rubik;
-  src        : url(/assets/fonts/Rubik/Rubik-Bold.eot) format("embedded-opentype"), url(/assets/fonts/Rubik/Rubik-Bold.woff) format("woff"), url(/assets/fonts/Rubik/Rubik-Bold.ttf) format("truetype");
+  src        : url(/assets/fonts/Rubik-Bold.eot) format("embedded-opentype"), url(/assets/fonts/Rubik-Bold.woff) format("woff"), url(/assets/fonts/Rubik-Bold.ttf) format("truetype");
   font-style : swap;
   font-weight: 700
 }

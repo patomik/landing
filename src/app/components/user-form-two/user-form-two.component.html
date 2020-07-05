@@ -1,0 +1,87 @@
+<div class="step" data-step="2">
+  <div class="step-row step-row_top">
+      <h3>Личные данные</h3>
+      <div class="step-count">Шаг второй</div>
+  </div>
+  <div class="box-form">
+      <div class="box-form-row box-form-row_3 box-form-row_decor box-form-row_mb">
+          <div class="box-field">
+              <label for="lastName" class="box-field__label">Фамилия
+                  <sup>*</sup></label>
+              <div class="box-field__input">
+                  <input type="text" class="form-control " name="last_name"
+                      placeholder="Фамилия" id="lastName" data-length="2" value=""
+                      required>
+              </div>
+          </div>
+          <div class="box-field">
+              <label for="firstName" class="box-field__label">Имя
+                  <sup>*</sup></label>
+              <div class="box-field__input">
+                  <input type="text" class="form-control " name="first_name"
+                      data-length="2" placeholder="Имя" id="firstName" required
+                      value="">
+              </div>
+          </div>
+          <div class="box-field">
+              <label for="patronymic" class="box-field__label">Отчество (если
+                  есть)</label>
+              <div class="box-field__input">
+                  <input type="text" class="form-control " placeholder="Отчество"
+                      id="patronymic" name="patronymic" value="">
+              </div>
+          </div>
+          <div class="box-field">
+              <label for="birthday" class="box-field__label">Дата рождения
+                  <sup>*</sup></label>
+              <div class="box-field__input">
+                  <input type="tel" class="form-control js-focus "
+                      data-mask="00/00/0000" name="birthday" data-length="10"
+                      placeholder="ДД/ММ/ГГГГ" id="birthday">
+              </div>
+          </div>
+          <div class="box-field">
+              <span class="box-field__label">Пол<sup>*</sup></span>
+              <div class="box-field__radio-wrap">
+                  <div class="box-field__radio">
+                      <input type="radio" class="radio" checked name="gender"
+                          id="radio1-3" value="male" />
+                      <label for="radio1-3" class="gender-radio">М</label>
+                  </div>
+                  <div class="box-field__radio">
+                      <input type="radio" class="radio" name="gender" id="radio2-3"
+                          value="female" />
+                      <label for="radio2-3" class="gender-radio">Ж</label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="box-form-row box-form-row_2">
+          <div class="box-field">
+              <label for="loan_sum" class="box-field__label">Сумма займа
+                  <sup>*</sup></label>
+              <div class="box-field__input">
+                  <input type="tel" class="form-control only-numbers " data-length="3"
+                      name="loan_sum" placeholder="500000" id="loan_sum" value="">
+              </div>
+          </div>
+          <div class="box-field">
+              <label for="loan_aim" class="box-field__label">Цель займа</label>
+              <div class="box-field__input">
+                  <select class="js-styled  " id="loan_aim">
+                      <option value="n_a">Не выбрано</option>
+                      <option value="tech">Ремонт/покупка техники, мебели</option>
+                      <option value="cure">На лечение</option>
+                      <option value="other_credit">Погашение другого кредита</option>
+                      <option value="until_salary">Деньги до зарплаты</option>
+                      <option value="other">Другое</option>
+                  </select>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="step-row step-row_bottom step-row_bottom-mod">
+      <a class="step-back js-step-btn" (click)="switchNextForm(1)">Назад</a>
+      <a class="btn js-step-btn" (click)="switchNextForm(3)">Продолжить</a>
+  </div>
+</div>

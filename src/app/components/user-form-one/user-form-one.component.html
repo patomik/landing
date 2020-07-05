@@ -1,0 +1,50 @@
+
+<div class="step" data-step="1" >
+  <div class="step-row step-row_top">
+      <h3>Контактная информация</h3>
+      <div class="step-count">Шаг первый</div>
+  </div>
+  <div class="box-form">
+      <div class="box-form-row box-form-row_2 box-form-row_mb box-form-row_decor">
+          <div class="box-field">
+              <label for="phoneNumber" class="box-field__label">Номер телефона
+                  <sup>*</sup></label>
+              <div class="box-field__input">
+                  <input type="tel" class="form-control js-focus "
+                      data-mask="+38 000-00-00-000" placeholder="+38" value="+38"
+                      id="phoneNumber" name="phone" data-length="17">
+              </div>
+          </div>
+          <div class="box-field">
+              <label for="email" class="box-field__label">Email</label>
+              <div class="box-field__input box-field__input_rel">
+                  <input type="email" class="autocomplete form-control "
+                      placeholder="Email (не обязательно)" id="email" name="email"
+                      value="" data-url="https://babules.com.ua/suggest-email">
+              </div>
+          </div>
+      </div>
+      <div class="box-form-row box-form-row_1">
+          <div class="box-field">
+              <input type="checkbox" class="checkbox checkbox_mod"
+                  id="agreement_accept" />
+              <label for="agreement_accept" class="agreement">Согласен с <a
+                      href="https://babules.com.ua/docs/offerta.pdf?ctSqJCac"
+                      target="_blank">условиями публичной оферты</a>, <a
+                      href="https://babules.com.ua/docs/tariff.pdf?ctSqJCac"
+                      target="_blank">тарифами</a> сервиса, даю свое <a
+                      href="https://babules.com.ua/docs/personal_data_processing.pdf?ctSqJCac"
+                      target="_blank">согласие на обработку персональных данных</a> и
+                  <a href="https://babules.com.ua/docs/info_agreement.pdf?ctSqJCac"
+                      target="_blank">на получение рекламных материалов</a>, осознаю
+                  что оплата услуг не гарантирует получение займа</label>
+          </div>
+      </div>
+  </div>
+  <div class="step-row step-row_bottom">
+      <div class="step-info"><span>*</span> Информация обязательна для заполнения
+      </div>
+      <a class="btn js-step-btn" (click)="switchNextForm(2)">Продолжить</a>
+  </div>
+</div>
+

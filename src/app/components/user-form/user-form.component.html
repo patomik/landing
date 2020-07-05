@@ -1,0 +1,64 @@
+
+
+
+
+    <div class="main-wrapper">
+        <header class="inner">
+            <div class="wrapper">
+                <div class="header-wrap">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a>
+                                <img src="https://babules.com.ua/img/logo_light.svg" alt="logo" class="logo">
+                            </a>
+                            <div>Деньги здесь и сейчас</div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="timmer">
+                            <div class="timmer__time">
+                                <span class="timmer__time-hide">Осталось</span>
+                                <span class="timer-span js-timer">19:59</span>
+                            </div>
+                            <div class="timmer__text">
+                                <div>Займ под 0.01%</div>
+                                <div>Осталось <span class="timer_mins">20</span> минут</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content content_profile">
+            <div class="wrapper">
+                <div class="content-wrap">
+                    <div class="profile-wrap">
+                        <ul class="profile-step__list step-3">
+                            <li class="profile-step__item  active ">1</li>
+                            <li class="profile-step__item active  ">2</li>
+                            <li class="profile-step__item  current">3</li>
+                        </ul>
+                        <div class="profile-cont">
+                            <!-- <form id="validate"> -->
+                              <app-user-form-one *ngIf="numberActiveForm === 1" ></app-user-form-one>
+                              <app-user-form-two *ngIf="numberActiveForm === 2" ></app-user-form-two>
+                              <app-user-form-three *ngIf="numberActiveForm === 3" ></app-user-form-three>
+                              <app-user-form-four *ngIf="numberActiveForm === 4" ></app-user-form-four>
+                              <app-user-form-five *ngIf="numberActiveForm === 5" ></app-user-form-five>
+<!--
+                            </form> -->
+                        </div>
+                    </div>
+                    <div class="btn-block">
+                        <a href="#" class="header-btn">
+                            <span><b>Получи займ на карту</b><br> и выиграй iPhone 11!</span> <br>
+                            <span><b>Подробнее</b> после заполнения анкеты</span>
+                            <img src="https://babules.com.ua/img/iphone11.png" alt="iphone11">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+

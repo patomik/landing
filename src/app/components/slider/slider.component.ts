@@ -9,7 +9,7 @@ import { LoanDataService } from 'src/app/shared/services/loan-data.service';
   providers: [DecimalPipe],
 })
 export class SliderComponent implements AfterViewInit, AfterViewChecked {
-  @Output() slideData: EventEmitter<number[]> = new EventEmitter<number[]>();
+  // @Output() slideData: EventEmitter<number[]> = new EventEmitter<number[]>();
   @Input() sliderMRangeSel = [];
   // @ViewChild('mrangeslider') mSliderEl: ElementRef;
   connect = 'true';
@@ -60,7 +60,7 @@ export class SliderComponent implements AfterViewInit, AfterViewChecked {
   updateSliderM($event) {
     this.loanDataService.changeRange($event);
 
-    this.slideData.emit($event);
+    // this.slideData.emit($event);
 
     // console.log('$event :>> ', $event);
     // console.log('sliderMRangeSel :>> ', this.sliderMRangeSel);

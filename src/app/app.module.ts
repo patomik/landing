@@ -28,6 +28,14 @@ import { SectionFaqComponent } from './components/section-faq/section-faq.compon
 import { SmsUnsubscribeComponent } from './components/sms-unsubscribe/sms-unsubscribe.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoanDataService } from './shared/services/loan-data.service';
+import { UserFormComponent } from './components/user-form/user-form.component';
+import { UserFormOneComponent } from './components/user-form-one/user-form-one.component';
+import { UserFormTwoComponent } from './components/user-form-two/user-form-two.component';
+import { UserFormThreeComponent } from './components/user-form-three/user-form-three.component';
+import { UserFormFourComponent } from './components/user-form-four/user-form-four.component';
+import { UserFormFiveComponent } from './components/user-form-five/user-form-five.component';
+import { FormSwitcherService } from './shared/services/form.service';
+import { OffersComponent } from './components/offers/offers.component';
 
 const config = {
   apiKey: 'AIzaSyChsaG9ii4kJmcCnzhMdIFAEvy5hDNJWJU',
@@ -58,7 +66,14 @@ const config = {
     CarouselComponent,
     SectionFaqComponent,
     SmsUnsubscribeComponent,
-    HomeComponent
+    HomeComponent,
+    UserFormComponent,
+    UserFormOneComponent,
+    UserFormTwoComponent,
+    UserFormThreeComponent,
+    UserFormFourComponent,
+    UserFormFiveComponent,
+    OffersComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -72,7 +87,7 @@ const config = {
     ReactiveFormsModule,
     NouisliderModule
   ],
-  providers: [LoanDataService],
+  providers: [LoanDataService, FormSwitcherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,131 @@
+
+                                <div class="step" data-step="3" >
+                                  <div class="step-row step-row_top">
+                                      <h3>Паспортные данные</h3>
+                                      <div class="step-count">Шаг третий</div>
+                                  </div>
+                                  <div class="tab-wrap">
+                                      <ul class="nav-tab-list tabs">
+                                          <li class="nav-tab-list__item doc-switcher  active "
+                                              data-doc-type="passport">
+                                              <a class="nav-tab-list__link" data-type="passport">Паспорт</a>
+                                          </li>
+                                          <li class="nav-tab-list__item doc-switcher " data-doc-type="id_card">
+                                              <a class="nav-tab-list__link" data-type="id_card">ID-карта</a>
+                                          </li>
+                                      </ul>
+                                      <div class="box-tab-cont">
+                                          <div class="tab-cont">
+                                              <div class="box-form-row box-form-row_mb box-form-row_2-1">
+                                                  <div class="box-field passport_fields passport_number ">
+                                                      <label for="passport_number" class="box-field__label">Серия /
+                                                          Номер
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input">
+                                                          <input type="text"
+                                                              class="form-control form-control_upper js-date-pasport "
+                                                              placeholder="ЕР / 589348" id="passport_number"
+                                                              name="passport_number" data-length="9" value="">
+                                                      </div>
+                                                  </div>
+                                                  <div class="box-field id_card_number id_card_fields  hidden ">
+                                                      <label for="id_card_number" class="box-field__label">Номер
+                                                          документа
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input">
+                                                          <input type="tel" class="form-control "
+                                                              placeholder="894587465" name="id_card_number"
+                                                              data-length="9" value="" data-mask="000000000"
+                                                              id="id_card_number">
+                                                      </div>
+                                                  </div>
+                                                  <div class="box-field id_card_date id_card_fields  hidden ">
+                                                      <label for="id_card_expire_date"
+                                                          class="box-field__label">Действительна до
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input">
+                                                          <input type="tel" class="form-control "
+                                                              placeholder="12/12/2025" data-length="10"
+                                                              name="id_card_expire_date" value=""
+                                                              data-mask="00/00/0000" id="id_card_expire_date">
+                                                      </div>
+                                                  </div>
+                                                  <div class="box-field inn_field  inn_66 ">
+                                                      <label for="inn" class="box-field__label">ИНН
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input">
+                                                          <input type="tel" class="form-control only-numbers "
+                                                              placeholder="" id="inn" value="" name="inn"
+                                                              data-length="10">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div
+                                                  class="box-form-row box-form-row_2 box-form-row_mb box-form-row_decor">
+                                                  <div class="box-field">
+                                                      <label for="region" class="box-field__label">Область
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input box-field__input_rel">
+                                                          <input type="text" class="autocomplete form-control "
+                                                              placeholder="" id="region" name="region" value=""
+                                                              autocomplete="nope" data-length="3"
+                                                              data-url="https://babules.com.ua/suggest-region">
+                                                      </div>
+                                                  </div>
+                                                  <div class="box-field">
+                                                      <label for="city" class="box-field__label">Населенный пункт
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input box-field__input_rel">
+                                                          <input type="text" class="form-control autocomplete "
+                                                              placeholder="" id="city" name="city" value=""
+                                                              autocomplete="nope" data-length="3"
+                                                              data-url="https://babules.com.ua/suggest-city">
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="box-form-row box-form-row_2">
+                                                  <div class="box-field">
+                                                      <span class="box-field__label">У вас есть кредитная
+                                                          история?<sup>*</sup></span>
+                                                      <div class="box-field__radio-wrap">
+                                                          <div class="box-field__radio">
+                                                              <input type="radio" class="radio" name="credit_history"
+                                                                  id="radio1" value="with" />
+                                                              <label for="radio1"
+                                                                  class="credit-history-radio">Да</label>
+                                                          </div>
+                                                          <div class="box-field__radio">
+                                                              <input type="radio" class="radio" name="credit_history"
+                                                                  id="radio2" value="without" />
+                                                              <label for="radio2"
+                                                                  class="credit-history-radio">Нет</label>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="box-field">
+                                                      <label for="employment" class="box-field__label">Трудоустройство
+                                                          <sup>*</sup></label>
+                                                      <div class="box-field__input">
+                                                          <select class="js-styled " id="employment"
+                                                              name="employment">
+                                                              <option value="no">Не трудоустроен/-a</option>
+                                                              <option value="official">Устроен/-a официально</option>
+                                                              <option value="private">Предприниматель</option>
+                                                              <option value="unofficial">Устроен/-а неофициально
+                                                              </option>
+                                                              <option value="maternity_leave">Декретный отпуск
+                                                              </option>
+                                                              <option value="pensioner">Пенсионер</option>
+                                                              <option value="student">Студент</option>
+                                                          </select>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="step-row step-row_bottom step-row_bottom-mod">
+                                      <a class="step-back js-step-btn" (click)="switchNextForm(2)">Назад</a>
+                                      <a class="btn js-step-btn" (click)="switchNextForm(4)">Продолжить</a>
+                                  </div>
+                              </div>
