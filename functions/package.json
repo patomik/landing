@@ -16,7 +16,7 @@
   "dependencies": {
     "@firebase/storage": "^0.3.37",
     "angular-universal-express-firebase": "0.0.4",
-    "firebase-admin": "^8.10.0",
+    "firebase-admin": "^8.13.0",
     "firebase-functions": "^3.6.1",
     "fs-extra": "^9.0.1"
   },

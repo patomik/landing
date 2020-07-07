@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offers.component.scss']
 })
 export class OffersComponent implements OnInit {
-  activeColor =  '#499b30'; defaultColor = '#499b30';
-  textColor = 'white';
+  activeColor =  'white'; defaultColor = '';
+  textColor = '#499b30';
   constructor() { }
 
   ngOnInit(): void {

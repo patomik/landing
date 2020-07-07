@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title = 'shop-universal';
-  activeColor =  '#499b30'; defaultColor = '#499b30';
+  activeColor =  '#499b30'; defaultColor = '';
   textColor = 'white';
+  textActiveColor = 'white';
   constructor() { }
 
   ngOnInit(): void {

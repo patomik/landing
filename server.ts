@@ -9,6 +9,10 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
+
+global['window'] = window;
+global['Event'] = window.Event;               // assign the `win.Event` to prop `Event`
+global['document'] = window.document;
 // The Express app is exported so that it can be used by serverless Functions.
 export function app() {
   const server = express();

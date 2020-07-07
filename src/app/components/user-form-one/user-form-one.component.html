@@ -1,3 +1,4 @@
+<form>
 
 <div class="step" data-step="1" >
   <div class="step-row step-row_top">
@@ -10,23 +11,23 @@
               <label for="phoneNumber" class="box-field__label">Номер телефона
                   <sup>*</sup></label>
               <div class="box-field__input">
-                  <input type="tel" class="form-control js-focus "
+                  <input type="text" class="form-control js-focus " [(ngModel)]="userData.phone" appPhoneMask  formControlName="phone"
                       data-mask="+38 000-00-00-000" placeholder="+38" value="+38"
-                      id="phoneNumber" name="phone" data-length="17">
+                      id="phoneNumber" name="phone" data-length="17" (blur)="setUserData('phone', userData.phone)" >
               </div>
           </div>
           <div class="box-field">
               <label for="email" class="box-field__label">Email</label>
               <div class="box-field__input box-field__input_rel">
-                  <input type="email" class="autocomplete form-control "
-                      placeholder="Email (не обязательно)" id="email" name="email"
-                      value="" data-url="https://babules.com.ua/suggest-email">
+                  <input class="autocomplete form-control "
+                      placeholder="Email (не обязательно)" id="email" type="email" name="email" [(ngModel)]="userData.email" [email]="true"
+                      (blur)="setUserData('email', userData.email)" >
               </div>
           </div>
       </div>
       <div class="box-form-row box-form-row_1">
           <div class="box-field">
-              <input type="checkbox" class="checkbox checkbox_mod"
+              <input type="checkbox" [checked]="userData.isAgreementAccept" (change)="userData.isAgreementAccept = !userData.isAgreementAccept" (blur)="setUserData('isAgreementAccept', userData.isAgreementAccept)" class="checkbox checkbox_mod"
                   id="agreement_accept" />
               <label for="agreement_accept" class="agreement">Согласен с <a
                       href="https://babules.com.ua/docs/offerta.pdf?ctSqJCac"
@@ -44,7 +45,9 @@
   <div class="step-row step-row_bottom">
       <div class="step-info"><span>*</span> Информация обязательна для заполнения
       </div>
-      <a class="btn js-step-btn" (click)="switchNextForm(2)">Продолжить</a>
+      <a  type="submit" class="btn js-step-btn " [ngClass]="{'freeze-btn': !userData.isAgreementAccept || !userData.phone || !userData.email }" (click)="switchNextForm(2)" disabled="true">Продолжить</a>
   </div>
 </div>
 
+
+</form>

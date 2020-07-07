@@ -36,6 +36,12 @@ import { UserFormFourComponent } from './components/user-form-four/user-form-fou
 import { UserFormFiveComponent } from './components/user-form-five/user-form-five.component';
 import { FormSwitcherService } from './shared/services/form.service';
 import { OffersComponent } from './components/offers/offers.component';
+import { GreatingsComponent } from './components/greatings/greatings.component';
+import { TimerService } from './shared/services/timer.service';
+import { UserService } from './shared/services/user.service';
+import { ToastMessagesComponent } from './components/toast-messages/toast-messages.component';
+import { ReversePipe } from './shared/pipes/reverse.pipe';
+import { PhoneMaskDirective } from './shared/directives/phone.directives';
 
 const config = {
   apiKey: 'AIzaSyChsaG9ii4kJmcCnzhMdIFAEvy5hDNJWJU',
@@ -73,7 +79,14 @@ const config = {
     UserFormThreeComponent,
     UserFormFourComponent,
     UserFormFiveComponent,
-    OffersComponent
+    OffersComponent,
+    GreatingsComponent,
+    ToastMessagesComponent,
+    ReversePipe,
+    PhoneMaskDirective
+  ],
+  exports: [
+    ReversePipe, PhoneMaskDirective
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -87,7 +100,7 @@ const config = {
     ReactiveFormsModule,
     NouisliderModule
   ],
-  providers: [LoanDataService, FormSwitcherService],
+  providers: [LoanDataService, FormSwitcherService, TimerService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

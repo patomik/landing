@@ -10,6 +10,7 @@ export class HeaderComponent implements OnInit {
   @Input() activeColor = '#499b30';
   @Input() brandColor = '#499b30';
   @Input() textColor = '#959caa';
+  @Input() textActiveColor = '#499b30';
   @Input() isDefaultLogo = true;
 
   isSticky = false;
